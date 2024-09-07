@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: pagination_filtering
+
+  r2dbc:
+    url: r2dbc:postgresql://postgres:5432/cat
+    username: user-name
+    password: strong-password
+
+  sql:
+    init:
+      mode: always
+      platform: postgresql
+      schema-locations: classpath:sql/create_products_table.sql
